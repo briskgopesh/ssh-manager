@@ -165,6 +165,7 @@ if [ $# -eq 0 ]; then
 		port=$SSH_DEFAULT_PORT
 	fi
 	cecho -yellow $port
+  cecho -blue " [ $(basename $pem) ] "
 	echo
 done < $HOST_FILE
 
